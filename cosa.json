@@ -1,0 +1,16 @@
+[
+    {
+        "id": "2",
+        "titulo": "Cumbres borrascosas",
+        "autor": "Emily Bront",
+        "genero": "Novela",
+        "fecha_publicacion": "1847-12-24"
+    },
+    {
+        "id": "3",
+        "titulo": "100 Poemas de depresi",
+        "autor": "Ral Carusso",
+        "genero": "Poesa",
+        "fecha_publicacion": "2024-10-29"
+    }
+]

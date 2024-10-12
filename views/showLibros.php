@@ -30,7 +30,7 @@ $libros = json_decode($json, true);
         </tr>
         <?php
         for ($i = 0; $i < count($libros); $i++) {
-        ?>
+            ?>
             <tr>
                 <td><?php echo $libros[$i]["id"]; ?></td>
                 <td><?php echo $libros[$i]["titulo"]; ?></td>
@@ -40,7 +40,7 @@ $libros = json_decode($json, true);
 
             </tr>
 
-        <?php
+            <?php
         }
         ?>
     </table>
