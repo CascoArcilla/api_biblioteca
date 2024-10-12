@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 
 // Habilitar CORS para permitir solicitudes desde diferentes dominios (opcional)
 header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=UTF-8");
-
+header("Content-Type: application/json;");
+//charset=UTF-8
 // Datos de conexión a la base de datos
 $host = "localhost"; // Cambia esto por tu host si es diferente
 $db_name = "biblioteca"; // Cambia esto por el nombre de tu base de datos
@@ -18,7 +18,7 @@ $password = "1e3l5i10o"; // Contraseña del usuario de la base de datos
 $conn = new mysqli($host, $username, $password, $db_name);
 
 // Establecer el conjunto de caracteres en UTF-8
-$conn->set_charset("utf8mb4");
+$conn->set_charset("utf8");
 
 // Verificar si la conexión tuvo éxito
 if ($conn->connect_error) {

@@ -2,7 +2,8 @@
 $url = "http://localhost/API_biblioteca/libros/consultarLibro.php";
 $json = file_get_contents($url);
 $libros = json_decode($json, true);
-$libros = $libros["Datos"];
+//echo $libros[0]["titulo"];
+
 
 ?>
 
@@ -29,7 +30,7 @@ $libros = $libros["Datos"];
         </tr>
         <?php
         for ($i = 0; $i < count($libros); $i++) {
-            ?>
+        ?>
             <tr>
                 <td><?php echo $libros[$i]["id"]; ?></td>
                 <td><?php echo $libros[$i]["titulo"]; ?></td>
@@ -39,7 +40,7 @@ $libros = $libros["Datos"];
 
             </tr>
 
-            <?php
+        <?php
         }
         ?>
     </table>
