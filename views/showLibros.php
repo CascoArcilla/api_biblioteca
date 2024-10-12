@@ -2,6 +2,9 @@
 $url = "http://localhost/API_biblioteca/libros/consultarLibro.php";
 $json = file_get_contents($url);
 $libros = json_decode($json, true);
+//echo $libros[0]["titulo"];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +39,7 @@ $libros = json_decode($json, true);
                 <td><?php echo $libros[$i]["fecha_publicacion"]; ?></td>
 
             </tr>
+
             <?php
         }
         ?>
